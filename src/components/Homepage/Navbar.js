@@ -63,7 +63,7 @@ const Navbar = ({ language, detectedLanguage, setLanguage }) => {
     { name: schedule, link: "schedule-section" },
     { name: info, link: "info-section" },
     { name: rsvp, link: "rsvp-section" },
-    { name: registry, link: "gift-section" },
+    { name: registry, link: language === "ko" ? "money-gift-section" : "gift-section" },
     { name: music, link: "music-section" },
   ];
 
