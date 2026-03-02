@@ -47,5 +47,17 @@
     "eslint-config-next": "14.2.5",
     "postcss": "^8",
     "tailwindcss": "^3.4.1"
-  }
+  },
+  "description": "[Live Demo](https://emanuelekarolina.vercel.app/)",
+  "main": "tailwind.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dalyulbam/WannaWeMarry.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dalyulbam/WannaWeMarry/issues"
+  },
+  "homepage": "https://github.com/dalyulbam/WannaWeMarry#readme"
 }
