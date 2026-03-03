@@ -17,6 +17,7 @@ import {
   InfoSection,
   RSVPSection,
   RegistrySection,
+  MoneyGiftSection,
   MusicSection,
 } from "@/components";
 import LanguageDetector from "@/components/LanguageDetector/LanguageDetector";
@@ -32,7 +33,7 @@ export default function Home() {
   // Detect the browser's language and set it if supported, else default to English
   useEffect(() => {
     const browserLanguage = navigator.language || navigator.userLanguage;
-    const supportedLanguages = ["en", "it", "pl"]; // English, Italian and Polish are the current languages available for this website
+    const supportedLanguages = ["en", "ko", "fr", "ja"]; // English, Korean, French, and Japanese
     const detectedLanguage = supportedLanguages.includes(
       browserLanguage.slice(0, 2)
     )
@@ -73,8 +74,12 @@ export default function Home() {
         {/* RSVP Section */}
         <RSVPSection language={language} />
 
-        {/* Gift Registry Section */}
-        <RegistrySection language={language} />
+        {/* Gift Section -- Korean users see MoneyGiftSection, others see RegistrySection */}
+        {language === "ko" ? (
+          <MoneyGiftSection language={language} />
+        ) : (
+          <RegistrySection language={language} />
+        )}
 
         {/* Song Requests Section */}
         <MusicSection language={language} />

@@ -18,7 +18,7 @@ export default function NotFoundComponent() {
   // Detect language
   useEffect(() => {
     const browserLanguage = navigator.language || navigator.userLanguage;
-    const supportedLanguages = ["en", "it", "pl"];
+    const supportedLanguages = ["en", "ko", "fr", "ja"];
     const detectedLanguage = supportedLanguages.includes(
       browserLanguage.slice(0, 2)
     )

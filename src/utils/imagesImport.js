@@ -45,6 +45,10 @@ import la2 from "../../public/images/la2.png";
 import la3 from "../../public/images/la3.png";
 import divider from "../../public/icons/divider.png";
 import location from "../../public/icons/location.png";
+import korean from "../../public/icons/korean.png";
+import french from "../../public/icons/french.png";
+import japanese from "../../public/icons/japanese.png";
+import couple_photo from "../../public/images/couple_photo.jpg";
 
 const images = {
   welcome_1,
@@ -86,7 +90,11 @@ const images = {
   la2,
   la3,
   divider,
-  location
+  location,
+  korean,
+  french,
+  japanese,
+  couple_photo,
 };
 
 export default images;
